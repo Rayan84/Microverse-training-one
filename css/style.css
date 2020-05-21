@@ -6,4 +6,24 @@
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {}
+#profile-link{
+  background-color: lightblue;
+}
+
+#profile-link:hover{
+  color: white;
+}
+
+#project-link:hover #arrow{
+  display: inline-block;
+}
+
+#arrow{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #welcome-section {
+    background-color: lightblue;
+  }
+}
