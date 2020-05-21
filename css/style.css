@@ -1,15 +1,9 @@
-#welcome-section{
-  height: 100%;
-  background-color: blue;
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    text-align: center;
 }
 
-
-
-
-@media screen and (max-width: 800px){
-
-
-
-
-
-}
+@media screen and (max-width: 800px) {}

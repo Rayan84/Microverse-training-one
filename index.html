@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="load()">
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
 
@@ -24,25 +32,86 @@
 
     -->
     <script src="js/index.js"></script>
-   <nav id="navbar">
-     <ul>
-       <a href="#projects"><li>Projects</li>
-       </a>
 
-     </ul>
-   </nav>
-   <section id="welcome-section">
-   <h1>My portofolio</h1>
-    <section id="projects">
-      <p class="project-tile"></p>
-      <a href="project.html">
-      </a>
+
+
+
+
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light" style="display:flex;justify-content:flex-end;align-items: flex-end; position:  fixed;width:100%;">
+        <div class="row">
+            <a class="navbar-brand" href="#welcome-section" onclick="displayOne()">About</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#projects" onclick="displayOne()">Work <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <section id="welcome-section">
+        <h1 style="display:flex;justify-content: center;align-items: center; height:100%;">Hey we are web developers</h1>
     </section>
-   <a id="profile-link" href="https://github.com/Rayan84/Microverse-training-one" target="_blank">
-   </a>
-   </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 project-tile">
+                    <a name="" id="" style="text-decoration:none;width: 100%;height: 100%;text-align:center; display: inline-block;" href="https://codepen.io/freeCodeCamp/full/zNqgVx" role="button" target="_blank">
+
+                        <img src="images/tribute.jpg" style="overflow:none; width:100%;height: 100%;" /> Tribute Page
+
+                    </a>
+                </div>
+                <div class="col-lg-4 project-tile">
+
+                    <a name="" id="" style="text-decoration:none;width: 100%;height: 100%;text-align:center; display: inline-block;" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" role="button" target="_blank">
+
+                        <img src="images/random-quote-machine.png" style="overflow:none;width:100%;height: 100%;" /> Random Quote Machine
+
+                    </a>
+                </div>
+                <div class="col-lg-4 project-tile">
+
+                    <a name="" id="" style="text-decoration:none; width: 100%;height: 100%;text-align:center; display: inline-block;" href="https://codepen.io/freeCodeCamp/full/wgGVVX" role="button" target="_blank">
+
+                        <img src="images/calc.png" style="overflow:none;width:100%;height: 100%;" /> JavaScript
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top:15% ;">
+
+                <a name="" id="profile-link" class="btn btn-default" href="https://github.com/Rayan84/Microverse-training-one" target="_blank" role="button" style="text-align:center;text-decoration: none;">Our Github</a>
+
+            </div>
+
+        </div>
 
 
+    </section>
+
+    <script>
+        function load() {
+            document.getElementById("welcome-section").style.height = window.innerHeight + "px";
+            document.getElementById("welcome-section").style.color = "green";
+        }
+
+        function displayOne() {
+
+        }
+    </script>
 </body>
 
 </html>
